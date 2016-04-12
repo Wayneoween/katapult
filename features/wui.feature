@@ -17,6 +17,7 @@ Feature: Web User Interface
         customer.attr :revenue, type: :money
         customer.attr :homepage, type: :url, default: 'http://www.makandra.de'
         customer.attr :locked, type: :flag, default: false
+        customer.attr :notes, type: :text
       end
 
       wui 'customer', model: 'customer' do |wui|
@@ -196,6 +197,10 @@ Feature: Web User Interface
           = Customer.human_attribute_name(:locked)
         %dd
           = @customer.locked ? 'Yes' : 'No'
+        %dt
+          = Customer.human_attribute_name(:notes)
+        %dd
+          = simple_format(@customer.notes)
 
       """
     And the file "app/views/customers/new.html.haml" should contain exactly:
@@ -244,6 +249,10 @@ Feature: Web User Interface
             = form.label :locked
           %dd
             = form.check_box :locked
+          %dt
+            = form.label :notes
+          %dd
+            = form.text_area :notes
 
         .tools
           = form.submit 'Save', class: 'tools__button is_primary'
@@ -286,6 +295,7 @@ Feature: Web User Interface
             And I fill in "Revenue" with "2.21"
             And I fill in "Homepage" with "homepage.example.com"
             And I check "Locked"
+            And I fill in "Notes" with "notes-string"
             And I press "Save"
 
           # read
@@ -296,6 +306,7 @@ Feature: Web User Interface
             And I should see "2.21"
             And I should see "homepage.example.com"
             And I should see "Locked Yes"
+            And I should see "notes-string"
 
           # update
           When I follow "Edit"
@@ -306,6 +317,7 @@ Feature: Web User Interface
             And the "Revenue" field should contain "2.21"
             And the "Homepage" field should contain "homepage.example.com"
             And the "Locked" checkbox should be checked
+            And the "Notest" field should contain "notes-string"
 
           # destroy
           When I go to the list of customers
@@ -321,6 +333,7 @@ Feature: Web User Interface
     Then the features should pass
 
 
+  @announce-output
   Scenario: Generate layout file with query diet widget
     When I overwrite "lib/katapult/application_model.rb" with:
       """

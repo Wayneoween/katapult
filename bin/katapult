@@ -32,7 +32,7 @@ when 'new'
   end
 
   pink_puts 'Creating new Rails application ...'
-  run "rails new #{ app_name } --skip-test-unit --skip-bundle --database mysql"
+  run "rails new #{ app_name } --skip-test-unit --skip-bundle --database postgresql"
 
   Dir.chdir app_name
 
@@ -64,15 +64,21 @@ when 'fire'
   transform_command = 'bin/rails generate katapult:transform ' + app_model_path
 
   pink_puts 'Loading katapult ...'
-  run transform_command
-  Katapult::Util.git_commit transform_command
 
-  pink_puts <<-INSTRUCTIONS
+  if run transform_command
+    Katapult::Util.git_commit transform_command
+
+    pink_puts <<-INSTRUCTIONS
 Model transformation done.
 
 Now boot up your development server (e.g. with `rails server`) and try your
 kickstarted application in the browser!
-  INSTRUCTIONS
+    INSTRUCTIONS
+  else
+    pink_puts <<-ERROR
+x Model transformation failed.
+    ERROR
+  end
 
 else
   puts <<-USAGE

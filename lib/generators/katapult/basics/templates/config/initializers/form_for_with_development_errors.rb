@@ -33,7 +33,6 @@ if Rails.env == 'development'
           html << '</style>'.html_safe
         end
         html << capture(form, &block)
-        Rails.version.to_i < 3 ? concat(html) : html
       end
     end
 
@@ -42,4 +41,3 @@ if Rails.env == 'development'
   end
 
 end
-

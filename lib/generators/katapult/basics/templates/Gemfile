@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 
 # engines
 gem 'haml-rails'
-gem 'mysql2', '~> 0.3.18' # Work around require-error in Rails 4.2
+gem 'pg'
 
 # internal
 gem 'exception_notification'
@@ -38,7 +38,7 @@ gem 'sass-rails'
 gem 'autoprefixer-rails'
 gem 'coffee-rails'
 gem 'uglifier'
-gem 'compass-rails', '>= 2.0.4' # fixes "uninitialized constant Sprockets::SassCacheStore"
+gem 'compass-rails', '>= 2.0.4' # Fixes "uninitialized constant Sprockets::SassCacheStore"
 gem 'compass-rgbapng'
 
 group :development do

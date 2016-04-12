@@ -71,3 +71,19 @@ Feature: Katapult binary `katapult`
     When I run `git log`
     Then the output should contain "rails generate katapult:transform lib/katapult/application_model.rb"
       And the output should contain "Author: katapult <katapult@makandra.com>"
+
+
+  Scenario: When the transformation fails, an error message is printed
+    Given a pristine Rails application
+    And I install katapult
+    And I generate katapult basics
+
+    When I overwrite "lib/katapult/application_model.rb" with:
+      """
+      model 'failing example' do |model|
+        model.attr :foo, type: :nonexistent
+      end
+      """
+    And I run `katapult fire`
+    Then the output should not contain "Model transformation done"
+    But the output should contain "Model transformation failed"

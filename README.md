@@ -171,11 +171,12 @@ It caches a pristine Rails application inside its `tmp/` directory to
 speed up test runs. Keep this in mind, as it may lead to caching issues when
 switching Ruby versions or installing a new version of the Rails gem.
 
-Since `katapult` has full-stack integration tests, it requires a MySQL account.
-Create a dedicated account on your local MySQL server by running this command in
-a MySQL console (as-is):
+Since `katapult` has full-stack integration tests, it requires a PostgreSQL
+account. Create a dedicated account on your local PostgreSQL server by running
+this command in a PostgreSQL console (as-is):
 
     GRANT ALL ON *.* TO 'katapult'@'localhost' IDENTIFIED BY 'secret';
+    CREATE ROLE katapult
 
 The user `katapult` is hereby granted any action (SELECT, UPDATE, etc. except
 for granting privileges) on any database and table (`*.*`).

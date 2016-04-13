@@ -129,6 +129,8 @@ config.autoload_paths << "#{Rails.root}/app/controllers/shared"
         gsub_file '.rspec', "--warnings\n", '' # Don't show Ruby warnings
         uncomment_lines 'spec/rails_helper.rb', /Dir.Rails.root.join.+spec.support/
         template 'spec/support/shoulda_matchers.rb'
+        template 'spec/support/factory_girl.rb'
+        directory 'spec/support/factories'
       end
 
       def install_styles

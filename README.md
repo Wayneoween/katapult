@@ -8,7 +8,7 @@ application and generates ([makandra-flavored](https://leanpub.com/growing-rails
 code from an application model, significantly speeding up the initial phase of a
 Rails project.
 
-`Katapult` will always support current versions of Ruby and Rails, currently
+`Katapult` will only support current versions of Ruby and Rails, currently
 Rails 4.2 and Ruby 2.3.
 
 
@@ -78,7 +78,7 @@ Inside this file, use `katapult`'s simple DSL (domain specific language) to
 express yourself. When you are done developing the application model, transform
 it into code with:
 
-    katapult fire
+    katapult fire [path/to/application_model]
 
 See an overview of the DSL below. The respective sections hold examples of what
 options are available to each element.

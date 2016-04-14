@@ -34,7 +34,7 @@ Feature: Katapult binary `katapult`
 #    Then the output should contain "The Gemfile's dependencies are satisfied"
 
     # test whether katapult made git commits
-    When I run `git log`
+    When I run `git log | head 100`
     Then the output should contain "rails new binary_test"
     And the output should contain "rails generate katapult:install"
     And the output should contain "rails generate katapult:basics"
@@ -69,7 +69,7 @@ Feature: Katapult binary `katapult`
     kickstarted application in the browser!
     """
 
-    When I run `git log`
+    When I run `git log | head 100`
     Then the output should contain "rails generate katapult:transform lib/katapult/application_model.rb"
       And the output should contain "Author: katapult <katapult@makandra.com>"
 

@@ -22,7 +22,7 @@ module Katapult
     end
 
     def label_attr
-      attrs.first
+      renderable_attrs.first
     end
 
     def renderable_attrs

@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 # internal
 gem 'exception_notification'
-gem 'admin_cleaner', git: 'git@code.makandra.de:makandra/admin_cleaner.git'
+# gem 'admin_cleaner', git: 'git@code.makandra.de:makandra/admin_cleaner.git'
 
 # security
 gem 'breach-mitigation-rails'

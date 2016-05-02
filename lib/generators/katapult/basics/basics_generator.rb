@@ -132,13 +132,12 @@ config.autoload_paths << "#{Rails.root}/app/controllers/shared"
         template 'spec/support/factory_girl.rb'
         directory 'spec/support/factories'
       end
+
       def install_capistrano
-        # Create Capfile before installing Capistrano to prevent annoying
+        # Create Capfile *before* installing Capistrano to prevent annoying
         # Harrow.io ad
         template 'Capfile', force: true
         run 'cap install'
-
-        run 'bundle install --path vendor/cache'
 
         template 'config/deploy.rb', force: true
         template 'config/deploy/staging.rb', force: true

@@ -11,14 +11,16 @@ Feature: Add authentication to an application
     When I overwrite "lib/katapult/application_model.rb" with:
       """
       model 'User'
+      wui('User') { |w| w.crud }
       authenticate system_email: 'system@example.com'
       """
     And I successfully transform the application model
     Then the file "Gemfile" should contain "gem 'clearance'"
     And the file "app/controllers/application_controller.rb" should contain:
       """
-        before_action :require_login
         include Clearance::Controller
+
+        before_action :require_login
       """
     And the file "app/controllers/passwords_controller.rb" should contain exactly:
       """
@@ -39,17 +41,16 @@ Feature: Add authentication to an application
 
       end
       """
-    And the file "app/controllers/users_controller.rb" should contain:
-      """
-            email
-            password
-      """
+    And the file "app/controllers/users_controller.rb" should match /permit.*email.*password/
     And the file "app/views/users/_form.html.haml" should contain:
       """
           %dt
             = form.label :email
           %dd
-            = form.text_field :email
+            = form.email_field :email
+      """
+    And the file "app/views/users/_form.html.haml" should contain:
+      """
           %dt
             = form.label :password
           %dd
@@ -139,7 +140,9 @@ Feature: Add authentication to an application
       """
     And the file "config/environments/test.rb" should contain:
       """
+        # Enable quick-signin in tests: `visit homepage(as: User.last!)`
         config.middleware.use Clearance::BackDoor
+
       """
     And the file "config/initializers/clearance.rb" should contain exactly:
       """
@@ -312,7 +315,7 @@ Feature: Add authentication to an application
       """
       When /^I (?:am signed|sign) in as the user above$/ do
         user = User.last!
-        visit backend_root_path(as: user)
+        visit backend_root_path(as: user) # Using Clearance::BackDoor
       end
       """
     And the file "features/support/paths.rb" should contain:

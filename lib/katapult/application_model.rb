@@ -35,6 +35,7 @@ module Katapult
 
     def set_authentication(auth)
       auth.set_application_model(self)
+      auth.ensure_user_model_attributes_present
       @authentication = auth
     end
 

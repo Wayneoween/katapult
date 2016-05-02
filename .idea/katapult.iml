@@ -10,7 +10,9 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/tmp/aruba/katapult_test_app/vendor/cache" />
+    </content>
     <orderEntry type="jdk" jdkName="rbenv: 2.3" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.6, rbenv: 2.3) [gem]" level="application" />

@@ -1,3 +1,4 @@
+@announce-output
 Feature: Add authentication to an application
 
   Background:
@@ -279,33 +280,55 @@ Feature: Add authentication to an application
             And I follow "Forgot password"
           Then I should be on the reset password page
             And I should see "Password Reset"
-            And I should see "Bitte geben Sie Ihre E-Mail-Adresse ein"
 
-          When I fill in "E-Mail-Adresse" with "vergesslich@example.de"
-            And I press "Link anfordern"
+          When I fill in "Email" with "henry@example.com"
+            And I press "Request Instructions"
           Then an email should have been sent with:
             '''
-            From: system@ruv-newsroom.de
-            To: vergesslich@example.de
-            Subject: [R+V Newsroom] Passwort zurücksetzen
+            From: system@example.com
+            To: henry@example.com
+            Subject: Change your password
 
-            Wenn Sie Ihr Passwort für den R+V Newsroom zurücksetzen möchten, öffnen Sie bitte diese Adresse in
-            Ihrem Browser:
-
-
+            Someone, hopefully you, requested we send you a link to change
+        your password:
             '''
-            And that email should have the following lines in the body:
-            """
-            Falls Sie Ihr Passwort nicht ändern möchten, können Sie diese E-Mail einfach
-            löschen.
-            """
 
           When I follow the first link in the email
           Then I should be on the new password page for the user above
-            And I should see "Passwort zurücksetzen"
+            And I should see "Reset Password"
 
-          When I fill in "Neues Passwort" with "new-password"
-            And I press "Passwort festlegen"
-          Then I should see "Neues Passwort erfolgreich festgelegt" within the flash
-            And I should be on the backend
+          When I fill in "Password" with "new-password"
+            And I press "Update Password"
+          Then I should see "Password updated" within the flash
+            And I should be on the homepage
+      """
+    And the file "features/users.feature" should contain:
+      """
+        Background:
+          Given there is a user
+            And I sign in as the user above
+      """
+    And the file "features/step_definitions/authentication_steps.rb" should contain exactly:
+      """
+      When /^I (?:am signed|sign) in as the user above$/ do
+        user = User.last!
+        visit backend_root_path(as: user)
+      end
+      """
+    And the file "features/support/paths.rb" should contain:
+      """
+          # Authentication
+          when 'the sign-in form'
+            sign_in_path
+          when 'the reset password page'
+            new_password_path
+          when 'the new password page for the user above'
+            edit_user_password_path(User.last!)
+      """
+    And the file "spec/factories/factories.rb" should contain:
+      """
+        factory :user do
+          sequence(:email) { |i| "user-#{ i }@example.com" }
+          password 'password'
+        end
       """

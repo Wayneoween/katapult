@@ -132,16 +132,14 @@ config.autoload_paths << "#{Rails.root}/app/controllers/shared"
         template 'spec/support/factory_girl.rb'
         directory 'spec/support/factories'
       end
-
-      def install_styles
-        remove_file 'app/assets/stylesheets/application.css'
-        directory 'app/assets/stylesheets', force: true
-      end
-
       def install_capistrano
+        # Create Capfile before installing Capistrano to prevent annoying
+        # Harrow.io ad
+        template 'Capfile', force: true
         run 'cap install'
 
-        template 'Capfile', force: true
+        run 'bundle install --path vendor/cache'
+
         template 'config/deploy.rb', force: true
         template 'config/deploy/staging.rb', force: true
         template 'config/deploy/production.rb', force: true
@@ -149,6 +147,12 @@ config.autoload_paths << "#{Rails.root}/app/controllers/shared"
         directory 'lib/capistrano/tasks'
         template 'lib/tasks/pending_migrations.rake'
       end
+
+      def install_styles
+        remove_file 'app/assets/stylesheets/application.css'
+        directory 'app/assets/stylesheets', force: true
+      end
+
 
     private
 

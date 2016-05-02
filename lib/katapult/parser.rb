@@ -33,7 +33,7 @@ module Katapult
     end
 
     def authenticate(system_email:)
-      application_model.set_authentication Authentication.new(:clearance,
+      application_model.set_authentication Authentication.new('User',
         system_email: system_email
       )
     end

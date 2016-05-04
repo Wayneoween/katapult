@@ -69,6 +69,7 @@ group :test do
 
   gem 'capybara'
   gem 'capybara-screenshot'
+  gem 'cucumber', '< 2' # Incompatible with Cucumber Factory
   gem 'cucumber-rails', require: false
   gem 'cucumber_factory'
   gem 'selenium-webdriver'

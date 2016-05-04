@@ -12,11 +12,16 @@ module Katapult
       source_root File.expand_path('../templates', __FILE__)
 
 
+      def migrate
+        rake 'db:migrate' # Clearance must see the users table in the db
+      end
+
       def install_clearance
-        insert_into_file 'Gemfile', "gem 'clearance'\n", before: "gem 'katapult'"
+        insert_into_file 'Gemfile', <<-GEM, before: "gem 'katapult'"
+gem 'clearance', '< 1.14.0' # Has broken InstallGenerator :(
+
+        GEM
         run 'bundle install'
-        # invoke 'clearance:install'
-        # run 'bundle exec rails g clearance:install'
         generate 'clearance:install'
       end
 
@@ -38,11 +43,15 @@ module Katapult
         directory 'app/views/sessions'
       end
 
+      def add_session_links_to_layout
+
+      end
+
       def install_backdoor
         # This creepy indentation leads to correct formatting in the file
         application <<-CONTENT, env: 'test'
 # Enable quick-signin in tests: `visit homepage(as: User.last!)`
-  config.middleware.use Clearance::BackDoor', env: 'test'
+  config.middleware.use Clearance::BackDoor
         CONTENT
       end
 
@@ -58,15 +67,56 @@ resources :users do
   end
 
   # Clearance
-  get '/login', to: '/clearance/sessions#new', as: 'sign_in'
-  resource :session, controller: '/clearance/sessions', only: [:create]
+  get '/login', to: 'clearance/sessions#new', as: 'sign_in'
+  resource :session, controller: 'clearance/sessions', only: [:create]
   resources :passwords, controller: 'passwords', only: [:create, :new]
-  delete '/logout', to: '/clearance/sessions#destroy', as: 'sign_out'
+  delete '/logout', to: 'clearance/sessions#destroy', as: 'sign_out'
         ROUTES
+      end
+
+      def add_sign_in_background_to_all_features
+        Dir['features/*.feature'].each do |file|
+          inject_into_file file, <<-CONTENT, after: /^Feature: .*$/
+
+  Background:
+    Given there is a user
+      And I sign in as the user above
+          CONTENT
+        end
       end
 
       def create_authentication_feature
         template 'features/authentication.feature'
+      end
+
+      def create_authentication_steps
+        template 'features/step_definitions/authentication_steps.rb'
+      end
+
+      def add_authentication_paths
+        inject_into_file 'features/support/paths.rb', <<-CONTENT, after: 'case page_name'
+
+
+    # Authentication
+    when 'the sign-in form'
+      sign_in_path
+    when 'the reset password page'
+      new_password_path
+    when 'the new password page for the user above'
+      edit_user_password_path(User.last!)
+
+        CONTENT
+      end
+
+      def add_user_factory
+        inject_into_file 'spec/factories/factories.rb', <<-'CONTENT', after: 'FactoryGirl.define do'
+
+  factory :user do
+    sequence(:email) { |i| "user-#{ i }@example.com" }
+    password 'password'
+  end
+
+        CONTENT
       end
 
     end

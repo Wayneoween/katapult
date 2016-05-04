@@ -9,18 +9,12 @@ module Katapult
       user_model = application_model.get_model('User')
       user_attrs = user_model.attrs.map(&:name)
 
-      %i[email password].each do |attr|
-        user_model.attr(attr) unless user_attrs.include?(attr.to_s)
-      end
+      user_model.attr(:email) unless user_attrs.include?('email')
+      user_model.attr(:password, type: :password, skip_db: true) unless user_attrs.include?('password')
     end
 
     def render
       Generators::ClearanceGenerator.new(self).invoke_all
-    end
-
-    private
-
-    def ensure_attribute(model, attr)
     end
 
   end

@@ -175,6 +175,7 @@ Feature: Katapult in general
 
         gem 'capybara'
         gem 'capybara-screenshot'
+        gem 'cucumber', '< 2' # Incompatible with Cucumber Factory
         gem 'cucumber-rails', require: false
         gem 'cucumber_factory'
         gem 'selenium-webdriver'
@@ -190,6 +191,11 @@ Feature: Katapult in general
         gem 'capistrano-maintenance'
       end
       """
+
+    And the file "app/controllers/application_controller.rb" should contain:
+    """
+      TODO configure ActionMailer
+    """
 
     # Just checking turbolinks was properly removed
     And the file "app/views/layouts/application.html.erb" should not contain "turbolinks"
@@ -531,7 +537,7 @@ Feature: Katapult in general
         config.include FactoryGirl::Syntax::Methods
       end
       """
-      And the file "spec/support/factories/factories.rb" should contain:
+      And the file "spec/factories/factories.rb" should contain:
       """
       FactoryGirl.define do
 

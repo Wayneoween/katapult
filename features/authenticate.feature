@@ -54,7 +54,7 @@ Feature: Add authentication to an application
           %dt
             = form.label :password
           %dd
-            = form.text_field :password
+            = form.password_field :password
       """
     And the file "app/views/clearance_mailer/change_password.html.haml" should contain exactly:
       """
@@ -170,10 +170,10 @@ Feature: Add authentication to an application
         end
 
         # Clearance
-        get '/login', to: '/clearance/sessions#new', as: 'sign_in'
-        resource :session, controller: '/clearance/sessions', only: [:create]
+        get '/login', to: 'clearance/sessions#new', as: 'sign_in'
+        resource :session, controller: 'clearance/sessions', only: [:create]
         resources :passwords, controller: 'passwords', only: [:create, :new]
-        delete '/logout', to: '/clearance/sessions#destroy', as: 'sign_out'
+        delete '/logout', to: 'clearance/sessions#destroy', as: 'sign_out'
       """
     And there should be a migration with:
       """
@@ -217,7 +217,7 @@ Feature: Add authentication to an application
 
 
         Scenario: Login
-          Given there is a user with the name "Henry" and the email "henry@example.com" and the password "password"
+          Given there is a user with the email "henry@example.com" and the password "password"
 
           When I go to "/admin"
           Then I should be on the sign-in form
@@ -240,12 +240,12 @@ Feature: Add authentication to an application
           # Correct credentials
           When I fill in "Email" with "henry@example.com"
             And I fill in "Password" with "password"
-            And I press "Anmelden"
+            And I press "Sign in"
           Then I should be on the homepage
 
 
         Scenario: Logout
-          Given there is a user with the name "Henry"
+          Given there is a user
             And I am signed in as the user above
 
           When I follow "Sign out"
@@ -257,11 +257,11 @@ Feature: Add authentication to an application
 
 
         Scenario: Reset password as a signed-in user
-          Given there is a user with the name "Henry" and the email "henry@example.com"
+          Given there is a user with the email "henry@example.com"
             And I sign in as the user above
 
           When I go to the homepage
-            And I follow "Henry" within the current user
+            And I follow "henry@example.com" within the current user
           Then I should be on the form for the user above
 
           When I fill in "Password" with "new-password"
@@ -277,7 +277,7 @@ Feature: Add authentication to an application
 
 
         Scenario: Reset password as a signed-out user
-          Given there is a user with the name "Henry" and the email "henry@example.com"
+          Given there is a user with the email "henry@example.com"
 
           When I go to the sign-in form
             And I follow "Forgot password"
@@ -287,14 +287,14 @@ Feature: Add authentication to an application
           When I fill in "Email" with "henry@example.com"
             And I press "Request Instructions"
           Then an email should have been sent with:
-            '''
+            \"\"\"
             From: system@example.com
             To: henry@example.com
             Subject: Change your password
 
             Someone, hopefully you, requested we send you a link to change
         your password:
-            '''
+            \"\"\"
 
           When I follow the first link in the email
           Then I should be on the new password page for the user above
@@ -307,19 +307,22 @@ Feature: Add authentication to an application
       """
     And the file "features/users.feature" should contain:
       """
+
         Background:
           Given there is a user
             And I sign in as the user above
+
       """
     And the file "features/step_definitions/authentication_steps.rb" should contain exactly:
       """
       When /^I (?:am signed|sign) in as the user above$/ do
         user = User.last!
-        visit backend_root_path(as: user) # Using Clearance::BackDoor
+        visit root_path(as: user) # Using Clearance::BackDoor
       end
       """
     And the file "features/support/paths.rb" should contain:
       """
+
           # Authentication
           when 'the sign-in form'
             sign_in_path
@@ -327,6 +330,7 @@ Feature: Add authentication to an application
             new_password_path
           when 'the new password page for the user above'
             edit_user_password_path(User.last!)
+
       """
     And the file "spec/factories/factories.rb" should contain:
       """
@@ -335,3 +339,7 @@ Feature: Add authentication to an application
           password 'password'
         end
       """
+
+    When I run cucumber
+    Then the features should pass
+

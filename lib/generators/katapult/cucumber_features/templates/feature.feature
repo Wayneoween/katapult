@@ -10,7 +10,7 @@ Feature: <%= model.name(:humans).titleize %>
       And I select "<%= attr.test_value %>" from "<%= attr.name.humanize %>"
   <%- else -%>
     <%- case attr.type -%>
-    <%- when :string, :email, :url, :integer, :money, :text -%>
+    <%- when :string, :email, :url, :integer, :money, :text, :password -%>
       And I fill in "<%= attr.name.humanize %>" with "<%= attr.test_value %>"
     <%- when :flag -%>
       And I check "<%= attr.name.humanize %>"
@@ -57,7 +57,7 @@ Feature: <%= model.name(:humans).titleize %>
     When I go to the list of <%= model.name(:variables) %>
     Then I should see "<%= model.label_attr.test_value %>"
 
-    When I follow "Destroy"
+    When I follow "Destroy <%= model.label_attr.test_value %>"
     Then I should be on the list of <%= model.name(:variables) %>
       But I should not see "<%= model.label_attr.test_value %>"
 <% end -%>

@@ -14,6 +14,7 @@ Feature: Web User Interface
         customer.attr :age, type: :integer
 
         customer.attr :email
+        customer.attr :password
         customer.attr :revenue, type: :money
         customer.attr :homepage, type: :url, default: 'http://www.makandra.de'
         customer.attr :locked, type: :flag, default: false
@@ -111,7 +112,7 @@ Feature: Web User Interface
 
         def customer_params
           customer_params = params[:customer]
-          customer_params ? customer_params.permit(%i[name age email revenue homepage locked notes first_visit indexable_data plain_data]) : {}
+          customer_params ? customer_params.permit(%i[name age email password revenue homepage locked notes first_visit indexable_data plain_data]) : {}
         end
 
         def customer_scope
@@ -247,6 +248,10 @@ Feature: Web User Interface
           %dd
             = form.email_field :email
           %dt
+            = form.label :password
+          %dd
+            = form.password_field :password
+          %dt
             = form.label :revenue
           %dd
             = form.number_field :revenue
@@ -306,6 +311,7 @@ Feature: Web User Interface
             And I fill in "Name" with "name-string"
             And I fill in "Age" with "778"
             And I fill in "Email" with "email@example.com"
+            And I fill in "Password" with "password-password"
             And I fill in "Revenue" with "2.21"
             And I fill in "Homepage" with "homepage.example.com"
             And I check "Locked"
@@ -350,7 +356,7 @@ Feature: Web User Interface
     Then the features should pass
 
 
-  Scenario: Generate layout file with query diet widget
+  Scenario: A WUI also generates the application layout file
     When I overwrite "lib/katapult/application_model.rb" with:
       """
       model 'Car'
@@ -360,4 +366,14 @@ Feature: Web User Interface
     Then the file "app/views/layouts/application.html.haml" should contain:
       """
       = query_diet_widget(bad_count: 15) if Rails.env.development?
+      """
+    And the file "app/views/layouts/application.html.haml" should contain:
+      """
+      = render 'layouts/flashes'
+      """
+    And the file "app/views/layouts/_flashes.html.haml" should contain:
+      """
+      - flash.each do |level, message|
+        .flash.alert.alert-info
+          = message
       """

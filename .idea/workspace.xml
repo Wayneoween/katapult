@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6732f5b9-d1e9-447f-8d10-06244f7ac6b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/controllers/passwords_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.text.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/create.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/edit.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/sessions/new.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/config/initializers/clearance.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/katapult/new.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/step_definitions/authentication_steps.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/_flashes.html.haml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/support/transforms.rb" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/generators/katapult/basics/templates/spec/support/factories/factories.rb" afterPath="$PROJECT_DIR$/lib/generators/katapult/basics/templates/spec/factories/factories.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/authenticate.feature" afterPath="$PROJECT_DIR$/features/authenticate.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/basics.feature" afterPath="$PROJECT_DIR$/features/basics.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/wui.feature" afterPath="$PROJECT_DIR$/features/wui.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile" afterPath="$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/katapult/application_model.rb" afterPath="$PROJECT_DIR$/lib/katapult/application_model.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature" afterPath="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature" afterPath="$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/haml/haml_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/katapult/haml/haml_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml" afterPath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/application.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/index.html.haml" afterPath="$PROJECT_DIR$/lib/generators/katapult/haml/templates/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb" afterPath="$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/katapult/attribute.rb" afterPath="$PROJECT_DIR$/lib/katapult/attribute.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/katapult/authentication.rb" afterPath="$PROJECT_DIR$/lib/katapult/authentication.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/katapult/model.rb" afterPath="$PROJECT_DIR$/lib/katapult/model.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/attribute_spec.rb" afterPath="$PROJECT_DIR$/spec/attribute_spec.rb" />
     </list>
     <ignored path="katapult.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,41 +45,46 @@
     <favorites_list name="katapult" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.43754044">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.5468026">
+        <splitter split-orientation="vertical" split-proportion="0.2150139">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+              <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="162">
-                      <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+                    <state relative-caret-position="446">
+                      <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
                       <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="parser.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/lib/katapult/parser.rb">
+              <file leaf-file-name="_flashes.html.haml" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/_flashes.html.haml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="342">
-                      <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
-                      <folding>
-                        <element signature="e#282#366#0" expanded="true" />
-                        <element signature="e#522#634#0" expanded="true" />
-                        <element signature="e#640#746#0" expanded="true" />
-                        <element signature="e#752#840#0" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="54">
+                      <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="navigation.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/lib/katapult/navigation.rb">
+              <file leaf-file-name="feature.feature" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="108">
-                      <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+                    <state relative-caret-position="162">
+                      <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="show.html.haml" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/show.html.haml">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="301">
+                      <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                       <folding />
                     </state>
                   </provider>
@@ -80,26 +93,20 @@
               <file leaf-file-name="application_model.rb" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/lib/katapult/application_model.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="241">
-                      <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+                    <state relative-caret-position="432">
+                      <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
                       <folding>
-                        <element signature="e#165#223#0" expanded="true" />
-                        <element signature="e#229#320#0" expanded="true" />
-                        <element signature="e#326#394#0" expanded="true" />
-                        <element signature="e#400#481#0" expanded="true" />
-                        <element signature="e#487#551#0" expanded="true" />
                         <element signature="e#677#829#0" expanded="true" />
-                        <element signature="e#846#1000#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="new.html.haml" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/lib/katapult/new.html.haml">
+              <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="252">
-                      <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                    <state relative-caret-position="198">
+                      <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
                       <folding />
                     </state>
                   </provider>
@@ -108,16 +115,13 @@
             </leaf>
           </split-first>
           <split-second>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file leaf-file-name="authentication.rb" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/lib/katapult/authentication.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="267">
-                      <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-                      <folding>
-                        <element signature="e#148#418#0" expanded="true" />
-                        <element signature="e#519#560#0" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="216">
+                      <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+                      <folding />
                     </state>
                   </provider>
                 </entry>
@@ -125,26 +129,39 @@
               <file leaf-file-name="clearance_generator.rb" pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="393">
-                      <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+                    <state relative-caret-position="391">
+                      <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                       <folding>
-                        <element signature="e#310#580#0" expanded="true" />
-                        <element signature="e#588#798#0" expanded="true" />
-                        <element signature="e#806#910#0" expanded="true" />
-                        <element signature="e#918#1080#0" expanded="true" />
-                        <element signature="e#1088#1375#0" expanded="true" />
-                        <element signature="e#1383#1480#0" expanded="true" />
-                        <element signature="e#1488#1946#0" expanded="true" />
+                        <element signature="e#813#844#0" expanded="false" />
+                        <element signature="e#1349#1457#0" expanded="false" />
+                        <element signature="e#1638#2026#0" expanded="false" />
+                        <element signature="e#2141#2327#0" expanded="false" />
+                        <element signature="e#2219#2297#0" expanded="false" />
+                        <element signature="e#2684#2907#0" expanded="false" />
+                        <element signature="e#3063#3168#0" expanded="false" />
+                        <marker date="1462356763245" expanded="false" signature="503:564" placeholder="heredoc ..." />
                       </folding>
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file leaf-file-name="clearance.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/config/initializers/clearance.rb">
+              <file leaf-file-name="generator.rb" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/katapult/generator.rb">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="108">
-                      <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+                    <state relative-caret-position="270">
+                      <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+                      <folding>
+                        <element signature="e#396#599#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="w_u_i_generator.rb" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/w_u_i/w_u_i_generator.rb">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="540">
+                      <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
                       <folding />
                     </state>
                   </provider>
@@ -153,21 +170,9 @@
               <file leaf-file-name="authentication.feature" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="162">
-                      <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+                    <state relative-caret-position="198">
+                      <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
                       <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="passwords_controller.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/controllers/passwords_controller.rb">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="270">
-                      <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-                      <folding>
-                        <element signature="e#62#375#2" expanded="true" />
-                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -178,92 +183,15 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="model.feature" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/features/model.feature">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wui.feature" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/features/wui.feature">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="275" column="8" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="model.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/katapult/model.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#259#323#0" expanded="true" />
-                    <element signature="e#329#419#0" expanded="true" />
-                    <element signature="e#571#643#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="element.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/katapult/element.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#555#720#0" expanded="true" />
-                    <element signature="e#1767#2071#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application_model.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/generators/katapult/install/templates/lib/katapult/application_model.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="basics_generator.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="853">
-                  <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+                <state relative-caret-position="504">
+                  <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
                   <folding>
-                    <element signature="e#581#651#0" expanded="true" />
-                    <element signature="e#659#724#0" expanded="true" />
-                    <element signature="e#732#958#0" expanded="true" />
-                    <element signature="e#1079#1339#0" expanded="true" />
-                    <element signature="e#1347#1722#0" expanded="true" />
-                    <element signature="e#1730#1954#0" expanded="true" />
-                    <element signature="e#1962#2222#0" expanded="true" />
-                    <element signature="e#1962#2222#0" expanded="true" />
-                    <element signature="e#2230#2364#0" expanded="true" />
-                    <element signature="e#2372#2751#0" expanded="true" />
-                    <element signature="e#2759#2838#0" expanded="true" />
-                    <element signature="e#2846#2993#0" expanded="true" />
-                    <element signature="e#3001#3160#0" expanded="true" />
-                    <element signature="e#3168#3242#0" expanded="true" />
-                    <element signature="e#3250#3303#0" expanded="true" />
-                    <element signature="e#3311#3696#0" expanded="true" />
-                    <element signature="e#3704#3992#0" expanded="true" />
-                    <element signature="e#4000#4362#0" expanded="true" />
-                    <element signature="e#4370#4829#0" expanded="true" />
-                    <element signature="e#4370#4829#0" expanded="true" />
-                    <element signature="e#4837#4982#0" expanded="true" />
-                    <element signature="e#5004#5057#0" expanded="true" />
-                    <element signature="e#5065#5147#0" expanded="true" />
+                    <element signature="e#2759#2850#0" expanded="true" />
+                    <element signature="e#4012#4366#0" expanded="true" />
+                    <element signature="e#4841#4986#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -272,49 +200,114 @@
           <file leaf-file-name="model_generator.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#369#680#0" expanded="true" />
-                    <element signature="e#688#794#0" expanded="true" />
-                    <element signature="e#905#1000#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="342">
+                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="w_u_i_generator.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/generators/katapult/w_u_i/w_u_i_generator.rb">
+          <file leaf-file-name="haml_generator.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/haml_generator.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+                <state relative-caret-position="702">
+                  <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
                   <folding>
-                    <element signature="e#538#1092#0" expanded="true" />
+                    <element signature="e#320#536#0" expanded="true" />
+                    <element signature="e#1822#1891#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="generator.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/katapult/generator.rb">
+          <file leaf-file-name="application.html.haml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/application.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+                <state relative-caret-position="414">
+                  <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="attribute.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/katapult/attribute.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding>
-                    <element signature="e#204#322#0" expanded="true" />
-                    <element signature="e#341#390#0" expanded="true" />
-                    <element signature="e#396#599#0" expanded="true" />
-                    <element signature="e#605#679#0" expanded="true" />
+                    <element signature="e#533#727#0" expanded="true" />
+                    <element signature="e#1247#1881#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="authenticate.feature" pinned="false" current-in-tab="true">
+          <file leaf-file-name="authenticate.feature" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/features/authenticate.feature">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+                <state relative-caret-position="396">
+                  <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#295#298#0" expanded="false" />
+                    <element signature="e#411#414#0" expanded="false" />
+                    <element signature="e#614#617#0" expanded="false" />
+                    <element signature="e#700#703#0" expanded="false" />
+                    <element signature="e#793#796#0" expanded="false" />
+                    <element signature="e#1262#1265#0" expanded="false" />
+                    <element signature="e#1433#1436#0" expanded="false" />
+                    <element signature="e#1541#1544#0" expanded="false" />
+                    <element signature="e#1618#1621#0" expanded="false" />
+                    <element signature="e#1735#1738#0" expanded="false" />
+                    <element signature="e#1841#1844#0" expanded="false" />
+                    <element signature="e#2048#2051#0" expanded="false" />
+                    <element signature="e#2153#2156#0" expanded="false" />
+                    <element signature="e#2305#2308#0" expanded="false" />
+                    <element signature="e#2395#2398#0" expanded="false" />
+                    <element signature="e#2547#2550#0" expanded="false" />
+                    <element signature="e#2635#2638#0" expanded="false" />
+                    <element signature="e#3098#3101#0" expanded="false" />
+                    <element signature="e#3185#3188#0" expanded="false" />
+                    <element signature="e#3630#3633#0" expanded="false" />
+                    <element signature="e#3716#3719#0" expanded="false" />
+                    <element signature="e#4333#4336#0" expanded="false" />
+                    <element signature="e#4406#4409#0" expanded="false" />
+                    <element signature="e#4540#4543#0" expanded="false" />
+                    <element signature="e#4626#4629#0" expanded="false" />
+                    <element signature="e#5266#5269#0" expanded="false" />
+                    <element signature="e#5328#5331#0" expanded="false" />
+                    <element signature="e#5783#5786#0" expanded="false" />
+                    <element signature="e#5835#5838#0" expanded="false" />
+                    <element signature="e#6696#6699#0" expanded="false" />
+                    <element signature="e#6781#6784#0" expanded="false" />
+                    <element signature="e#10300#10303#0" expanded="false" />
+                    <element signature="e#10408#10411#0" expanded="false" />
+                    <element signature="e#10511#10514#0" expanded="false" />
+                    <element signature="e#10679#10682#0" expanded="false" />
+                    <element signature="e#10750#10753#0" expanded="false" />
+                    <element signature="e#11025#11028#0" expanded="false" />
+                    <element signature="e#11098#11101#0" expanded="false" />
+                    <element signature="e#11236#11239#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html.haml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/index.html.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="basics.feature" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/features/basics.feature">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="196" column="21" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -330,57 +323,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/tasks/pending_migrations.rake" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/Capfile" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/config/deploy/staging.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/capistrano/tasks/passenger.rake" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/capistrano/tasks/db.rake" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/config/deploy/production.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/capistrano/tasks/deploy.rake" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/config/initializers/ext.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/hash/infinite.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/string/nbsp.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/action_view/spec_label.rb" />
         <option value="$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/tmp/aruba/katapult_test_app/config/secrets.yml" />
         <option value="$PROJECT_DIR$/spec/util_spec.rb" />
         <option value="$PROJECT_DIR$/bin/katapult" />
-        <option value="$PROJECT_DIR$/features/basics.feature" />
         <option value="$PROJECT_DIR$/features/model.feature" />
-        <option value="$PROJECT_DIR$/lib/katapult/attribute.rb" />
-        <option value="$PROJECT_DIR$/features/wui.feature" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_92" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/show.html.haml" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml" />
         <option value="$PROJECT_DIR$/features/binary.feature" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/lib/katapult/model.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/features/support/paths.rb" />
         <option value="$PROJECT_DIR$/features/support/transforms.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile" />
         <option value="$PROJECT_DIR$/lib/katapult/authenticate.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/katapult_steps.rb" />
         <option value="$PROJECT_DIR$/lib/katapult/generator.rb" />
         <option value="$PROJECT_DIR$/lib/katapult/parser.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/controllers/passwords_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/install/templates/lib/katapult/application_model.rb" />
         <option value="$PROJECT_DIR$/spec/model_spec.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.html.haml" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.text.erb" />
         <option value="$PROJECT_DIR$/lib/katapult/application_model.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/create.html.haml" />
-        <option value="$PROJECT_DIR$/lib/katapult/authentication.rb" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/edit.html.haml" />
         <option value="$PROJECT_DIR$/lib/katapult/new.html.haml" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/sessions/new.html.haml" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/passwords/new.html.haml" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/config/initializers/clearance.rb" />
-        <option value="$PROJECT_DIR$/features/authenticate.feature" />
-        <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/install/templates/lib/katapult/application_model.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb" />
+        <option value="$PROJECT_DIR$/features/support/env.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb" />
+        <option value="$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/step_definitions/authentication_steps.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/_flashes.html.haml" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/show.html.haml" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml" />
+        <option value="$PROJECT_DIR$/lib/katapult/model.rb" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_96" />
+        <option value="$PROJECT_DIR$/lib/katapult/authentication.rb" />
+        <option value="$PROJECT_DIR$/spec/attribute_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/katapult/attribute.rb" />
+        <option value="$PROJECT_DIR$/features/wui.feature" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/index.html.haml" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile" />
         <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/haml_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/features/authenticate.feature" />
+        <option value="$PROJECT_DIR$/features/basics.feature" />
       </list>
     </option>
   </component>
@@ -420,214 +413,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clearance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clearance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="katapult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clearance" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Problems">
@@ -670,6 +455,9 @@
         </subPane>
         <subPane subId="Project Files" />
       </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -684,21 +472,22 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/dominik/code/katapult/lib/generators/katapult/basics/templates/Gemfile&#10;secre&#9;FILE&#9;file:///home/dominik/code/katapult/tmp/aruba/katapult_test_app/config/secrets.yml" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/dominik/code/katapult/features/wui.feature&#10;secre&#9;FILE&#9;file:///home/dominik/code/katapult/tmp/aruba/katapult_test_app/config/secrets.yml" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/spec" />
+      <recent name="$PROJECT_DIR$/lib/generators/katapult/clearance/templates" />
+      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/enumerable" />
+      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/action_view" />
+      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/active_record" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/string" />
       <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/enumerable" />
       <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/active_record" />
       <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/array" />
       <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/config/initializers" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/generators/katapult/clearance/templates" />
-      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/enumerable" />
-      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/action_view" />
-      <recent name="$PROJECT_DIR$/lib/generators/katapult/basics/templates/lib/ext/active_record" />
     </key>
   </component>
   <component name="RunManager">
@@ -817,26 +606,30 @@
       <option name="presentableId" value="Default" />
       <updated>1424704257170</updated>
       <workItem from="1461915108731" duration="671000" />
-      <workItem from="1462174510798" duration="21911000" />
+      <workItem from="1462174510798" duration="22716000" />
+      <workItem from="1462255151155" duration="2995000" />
+      <workItem from="1462341528472" duration="12609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22582000" />
+    <option name="totallyTimeSpent" value="38991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="24" width="1922" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1470" y="25" width="450" height="1177" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="1470" y="25" width="450" height="1177" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912534" sideWeight="0.28541666" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25092593" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912534" sideWeight="0.71458334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47604167" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2761733" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -844,10 +637,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912534" sideWeight="0.71458334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -868,421 +659,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/util_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/attribute_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/binary.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#1709#0" expanded="false" />
-            <element signature="e#524#527#0" expanded="false" />
-            <element signature="e#704#707#0" expanded="false" />
-            <element signature="e#1714#1911#0" expanded="false" />
-            <element signature="e#1916#2085#0" expanded="false" />
-            <element signature="e#2090#2888#0" expanded="false" />
-            <element signature="e#2500#2503#0" expanded="false" />
-            <element signature="e#2664#2667#0" expanded="false" />
-            <element signature="e#3377#3876#0" expanded="false" />
-            <element signature="e#3617#3620#0" expanded="false" />
-            <element signature="e#3717#3720#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/wui.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="275" column="8" selection-start-line="275" selection-start-column="8" selection-end-line="275" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/aruba-0.10.2/lib/aruba/cucumber/file.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/support/transforms.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/attribute.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#782#1154#0" expanded="true" />
-            <element signature="e#1160#1745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/features/support/paths.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/generators/actions.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
-          <folding>
-            <element signature="e#3338#3555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/transform/transform_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/katapult">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/katapult.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bundler-1.11.2/lib/bundler/source/git.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1591">
-          <caret line="241" column="10" selection-start-line="241" selection-start-column="10" selection-end-line="241" selection-end-column="10" />
-          <folding>
-            <element signature="e#4604#4920#0" expanded="false" />
-            <element signature="e#4928#5382#0" expanded="false" />
-            <element signature="e#5793#5977#0" expanded="false" />
-            <element signature="e#7473#7534#0" expanded="false" />
-            <element signature="e#8301#8358#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="197">
-            <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/step_definitions/katapult_steps.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/w_u_i/w_u_i_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="e#538#1092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-          <folding>
-            <element signature="e#581#651#0" expanded="true" />
-            <element signature="e#659#724#0" expanded="true" />
-            <element signature="e#732#958#0" expanded="true" />
-            <element signature="e#1079#1339#0" expanded="true" />
-            <element signature="e#1347#1722#0" expanded="true" />
-            <element signature="e#1730#1954#0" expanded="true" />
-            <element signature="e#1962#2222#0" expanded="true" />
-            <element signature="e#1962#2222#0" expanded="true" />
-            <element signature="e#2230#2364#0" expanded="true" />
-            <element signature="e#2372#2751#0" expanded="true" />
-            <element signature="e#2759#2838#0" expanded="true" />
-            <element signature="e#2846#2993#0" expanded="true" />
-            <element signature="e#3001#3160#0" expanded="true" />
-            <element signature="e#3168#3242#0" expanded="true" />
-            <element signature="e#3250#3303#0" expanded="true" />
-            <element signature="e#3311#3696#0" expanded="true" />
-            <element signature="e#3704#3992#0" expanded="true" />
-            <element signature="e#4000#4362#0" expanded="true" />
-            <element signature="e#4370#4829#0" expanded="true" />
-            <element signature="e#4370#4829#0" expanded="true" />
-            <element signature="e#4837#4982#0" expanded="true" />
-            <element signature="e#5004#5057#0" expanded="true" />
-            <element signature="e#5065#5147#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <element signature="e#204#322#0" expanded="true" />
-            <element signature="e#341#390#0" expanded="true" />
-            <element signature="e#396#599#0" expanded="true" />
-            <element signature="e#605#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/controllers/passwords_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding>
-            <element signature="e#62#375#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/install/templates/lib/katapult/application_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/generators/named_base.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/model/templates/model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#369#680#0" expanded="true" />
-            <element signature="e#688#794#0" expanded="true" />
-            <element signature="e#905#1000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/model_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/w_u_i/templates/controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="104" column="10" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
-          <folding>
-            <element signature="e#2011#2244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="e#259#323#0" expanded="true" />
-            <element signature="e#329#419#0" expanded="true" />
-            <element signature="e#571#643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.text.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/views/clearance_mailer/change_password.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/navigation.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/wui.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/katapult/parser.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="414">
           <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
           <folding>
-            <element signature="e#282#366#0" expanded="true" />
-            <element signature="e#522#634#0" expanded="true" />
-            <element signature="e#640#746#0" expanded="true" />
-            <element signature="e#752#840#0" expanded="true" />
+            <element signature="e#282#366#0" expanded="false" />
+            <element signature="e#372#516#0" expanded="false" />
+            <element signature="e#522#634#0" expanded="false" />
+            <element signature="e#640#746#0" expanded="false" />
+            <element signature="e#752#840#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/katapult/element.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="414">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
-            <element signature="e#555#720#0" expanded="true" />
-            <element signature="e#1767#2071#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/model.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/katapult/application_model.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <element signature="e#165#223#0" expanded="true" />
-            <element signature="e#229#320#0" expanded="true" />
-            <element signature="e#326#394#0" expanded="true" />
-            <element signature="e#400#481#0" expanded="true" />
-            <element signature="e#487#551#0" expanded="true" />
-            <element signature="e#677#829#0" expanded="true" />
-            <element signature="e#846#1000#0" expanded="true" />
+            <element signature="e#555#720#0" expanded="false" />
+            <element signature="e#726#807#0" expanded="false" />
+            <element signature="e#813#1563#0" expanded="false" />
+            <element signature="e#1767#2071#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1291,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,6 +711,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/config/initializers/clearance.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/install/templates/lib/katapult/application_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1327,53 +738,419 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/db/migrate/20160504071455_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/features/support/paths.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/features/support/paths.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/spec/factories/factories.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/step_definitions/katapult_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/transforms.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/support/env.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/step_definitions/authentication_steps.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/model.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/_flashes.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/features/authentication.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="62" column="39" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/features/users.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/transform/transform_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#563#762#0" expanded="true" />
+            <element signature="e#768#1014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/app/controllers/passwords_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="e#62#375#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/views/customers/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/katapult/model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+          <folding>
+            <element signature="e#425#476#0" expanded="true" />
+            <element signature="e#482#533#0" expanded="true" />
+            <element signature="e#539#644#0" expanded="true" />
+            <element signature="e#650#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/aruba/katapult_test_app/app/views/customers/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="44" column="58" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_96">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1010" selection-start-line="0" selection-start-column="1010" selection-end-line="0" selection-end-column="1010" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/katapult/authentication.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="216">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/attribute_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="360">
+            <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/wui.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/katapult/attribute.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <element signature="e#148#418#0" expanded="true" />
-            <element signature="e#519#560#0" expanded="true" />
+            <element signature="e#533#727#0" expanded="true" />
+            <element signature="e#1247#1881#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/katapult/application_model.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="e#677#829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/cucumber_features/templates/feature.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/templates/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/katapult/generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="e#396#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/w_u_i/w_u_i_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/clearance_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="391">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="e#310#580#0" expanded="true" />
-            <element signature="e#588#798#0" expanded="true" />
-            <element signature="e#806#910#0" expanded="true" />
-            <element signature="e#918#1080#0" expanded="true" />
-            <element signature="e#1088#1375#0" expanded="true" />
-            <element signature="e#1383#1480#0" expanded="true" />
-            <element signature="e#1488#1946#0" expanded="true" />
+            <element signature="e#813#844#0" expanded="false" />
+            <element signature="e#1349#1457#0" expanded="false" />
+            <element signature="e#1638#2026#0" expanded="false" />
+            <element signature="e#2141#2327#0" expanded="false" />
+            <element signature="e#2219#2297#0" expanded="false" />
+            <element signature="e#2684#2907#0" expanded="false" />
+            <element signature="e#3063#3168#0" expanded="false" />
+            <marker date="1462356763245" expanded="false" signature="503:564" placeholder="heredoc ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/config/initializers/clearance.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/model/model_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="342">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/haml_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding>
+            <element signature="e#320#536#0" expanded="true" />
+            <element signature="e#1822#1891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/haml/templates/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/authenticate.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="396">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+          <folding>
+            <element signature="e#295#298#0" expanded="false" />
+            <element signature="e#411#414#0" expanded="false" />
+            <element signature="e#614#617#0" expanded="false" />
+            <element signature="e#700#703#0" expanded="false" />
+            <element signature="e#793#796#0" expanded="false" />
+            <element signature="e#1262#1265#0" expanded="false" />
+            <element signature="e#1433#1436#0" expanded="false" />
+            <element signature="e#1541#1544#0" expanded="false" />
+            <element signature="e#1618#1621#0" expanded="false" />
+            <element signature="e#1735#1738#0" expanded="false" />
+            <element signature="e#1841#1844#0" expanded="false" />
+            <element signature="e#2048#2051#0" expanded="false" />
+            <element signature="e#2153#2156#0" expanded="false" />
+            <element signature="e#2305#2308#0" expanded="false" />
+            <element signature="e#2395#2398#0" expanded="false" />
+            <element signature="e#2547#2550#0" expanded="false" />
+            <element signature="e#2635#2638#0" expanded="false" />
+            <element signature="e#3098#3101#0" expanded="false" />
+            <element signature="e#3185#3188#0" expanded="false" />
+            <element signature="e#3630#3633#0" expanded="false" />
+            <element signature="e#3716#3719#0" expanded="false" />
+            <element signature="e#4333#4336#0" expanded="false" />
+            <element signature="e#4406#4409#0" expanded="false" />
+            <element signature="e#4540#4543#0" expanded="false" />
+            <element signature="e#4626#4629#0" expanded="false" />
+            <element signature="e#5266#5269#0" expanded="false" />
+            <element signature="e#5328#5331#0" expanded="false" />
+            <element signature="e#5783#5786#0" expanded="false" />
+            <element signature="e#5835#5838#0" expanded="false" />
+            <element signature="e#6696#6699#0" expanded="false" />
+            <element signature="e#6781#6784#0" expanded="false" />
+            <element signature="e#10300#10303#0" expanded="false" />
+            <element signature="e#10408#10411#0" expanded="false" />
+            <element signature="e#10511#10514#0" expanded="false" />
+            <element signature="e#10679#10682#0" expanded="false" />
+            <element signature="e#10750#10753#0" expanded="false" />
+            <element signature="e#11025#11028#0" expanded="false" />
+            <element signature="e#11098#11101#0" expanded="false" />
+            <element signature="e#11236#11239#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/clearance/templates/features/authentication.feature">
+    <entry file="file://$PROJECT_DIR$/lib/generators/katapult/basics/basics_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="504">
+          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+          <folding>
+            <element signature="e#2759#2850#0" expanded="true" />
+            <element signature="e#4012#4366#0" expanded="true" />
+            <element signature="e#4841#4986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/basics.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="196" column="21" selection-start-line="196" selection-start-column="0" selection-end-line="196" selection-end-column="33" />
           <folding />
         </state>
       </provider>

@@ -7,7 +7,7 @@ Feature: Everything about user authentication
 
 
   Scenario: Login
-    Given there is a user with the name "Henry" and the email "henry@example.com" and the password "password"
+    Given there is a user with the email "henry@example.com" and the password "password"
 
     When I go to "/admin"
     Then I should be on the sign-in form
@@ -35,7 +35,7 @@ Feature: Everything about user authentication
 
 
   Scenario: Logout
-    Given there is a user with the name "Henry"
+    Given there is a user
       And I am signed in as the user above
 
     When I follow "Sign out"
@@ -47,11 +47,11 @@ Feature: Everything about user authentication
 
 
   Scenario: Reset password as a signed-in user
-    Given there is a user with the name "Henry" and the email "henry@example.com"
+    Given there is a user with the email "henry@example.com"
       And I sign in as the user above
 
     When I go to the homepage
-      And I follow "Henry" within the current user
+      And I follow "henry@example.com" within the current user
     Then I should be on the form for the user above
 
     When I fill in "Password" with "new-password"
@@ -67,7 +67,7 @@ Feature: Everything about user authentication
 
 
   Scenario: Reset password as a signed-out user
-    Given there is a user with the name "Henry" and the email "henry@example.com"
+    Given there is a user with the email "henry@example.com"
 
     When I go to the sign-in form
       And I follow "Forgot password"

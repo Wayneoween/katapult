@@ -81,7 +81,7 @@ module Katapult
       end
 
       def create_databases
-        run 'rake db:create:all parallel:create'
+        run 'rake db:drop:all db:create:all parallel:create'
       end
 
       def set_timezone
@@ -130,7 +130,7 @@ config.autoload_paths << "#{Rails.root}/app/controllers/shared"
         uncomment_lines 'spec/rails_helper.rb', /Dir.Rails.root.join.+spec.support/
         template 'spec/support/shoulda_matchers.rb'
         template 'spec/support/factory_girl.rb'
-        directory 'spec/support/factories'
+        directory 'spec/factories'
       end
 
       def install_capistrano

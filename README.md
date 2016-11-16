@@ -33,7 +33,7 @@ in your Gemfile.
 1. It creates a new Rails application, set up with many standard gems, snippets,
    useful configuration, databases, testing libraries etc. See the [BasicsGenerator](https://github.com/makandra/katapult/blob/master/lib/generators/katapult/basics/basics_generator.rb) for details.
 2. It generates code from an application model, i.e. creates files for models,
-   views, controllers, routes, stylesheets; see the
+   views, controllers, routes, stylesheets; see the [ModelGenerator](https://github.com/makandra/katapult/blob/master/lib/generators/katapult/model/model_generator.rb).
 
 You may use both or only one of them.
 

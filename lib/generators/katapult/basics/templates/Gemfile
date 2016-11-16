@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 # internal
 gem 'exception_notification'
+gem 'whenever', require: false
 # gem 'admin_cleaner', git: 'git@code.makandra.de:makandra/admin_cleaner.git'
 
 # security

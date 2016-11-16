@@ -9,6 +9,13 @@ util = Katapult::BinaryUtil
 
 case (transform_command = ARGV.shift)
 when 'new'
+
+  gem_name, *gem_ver_reqs = 'railties', '= 4.2.6'
+  found_gspec = Gem::Specification.find_all_by_name(gem_name, *gem_ver_reqs)
+  unless found_gspec
+    system('gem', 'install', gem_name, '-v', gem_ver_reqs)
+  end
+
   interactive = !ARGV.delete('--non-interactive')
   app_name = ARGV.shift
   basics_command = 'bundle exec rails generate katapult:basics'
